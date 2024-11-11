@@ -1,0 +1,124 @@
+/* Apply a background image of a field to the entire page with transparency */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.dreamstime.com/photos-images/vegetable-land.html'); /* Updated URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+    background-attachment: fixed; /* Creates a parallax effect as the page scrolls */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Overlay to make the background image transparent */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity here */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+/* Container styling for the crop information */
+.crops-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #4caf50; /* Green border */
+}
+
+/* Header styling */
+header {
+    background-color: #4caf50; /* Green theme */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Form styling */
+form {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4caf50; /* Green theme */
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4caf50; /* Green theme */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c; /* Slightly darker green */
+}
+
+/* Responsive design: Adjust container width on smaller screens */
+@media (max-width: 480px) {
+    .crops-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label, input[type="text"], input[type="date"], button {
+        font-size: 14px;
+    }
+}

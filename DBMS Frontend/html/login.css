@@ -1,0 +1,82 @@
+/* Base styling for body and form container */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6f7e6; /* Soft green background */
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border: 2px solid #4caf50; /* Green border */
+}
+
+/* Header styling */
+.login-form h2 {
+    text-align: center;
+    color: #2d6a4f; /* Dark green */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form group layout */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    color: #4caf50; /* Medium green */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c1e1c1; /* Light green */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Input focus effect */
+.form-group input:focus {
+    border-color: #81c784; /* Slightly darker green on focus */
+    outline: none;
+    background-color: #f1f9f1; /* Light green background on focus */
+}
+
+/* Submit button styling */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50; /* Main green color */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.login-btn:hover {
+    background-color: #388e3c; /* Darker green */
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .login-form {
+        width: 90%;
+    }
+}
