@@ -28,18 +28,31 @@
             </div>
 
             <div class="input-group">
+                <i class="fas fa-calendar"></i>
+                <input type="text" name="dob" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date of Birth">
+                <label for="dob">Date Of Birth</label>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-house"></i>
+                <input type="text" name="address" placeholder="Address">
+                <label for="address">Address</label>
+            </div>
+
+            <div class="input-group">
                 <i class="fas fa-user"></i>
                 <input type="password" name="password" placeholder="Password">
                 <label for="password">Password</label>
-            </di
-        <input type="submit" class="btn" name="register" value="Register">
+            </div>
+            <input type="submit" class="btn" name="login" value="Log In">
         </form>
+        
         <div class="link-other-form">
-            <p> Already have an account? </p>
+            <p>Already have an account?</p>
             <button id="login-button" onclick="window.location.href='login.php'">Log In</button>
         </div>
     </div>
-
+    
 
 </body>
 </html>

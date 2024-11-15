@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
-    
+
     <div class="container" id="login">
         <h1 class="form-title">Log In</h1>
         <form method="post" action ="">
@@ -34,7 +34,6 @@
             <button id="register-button" onclick="window.location.href='register.php'">Register</button>
         </div>
     </div>
-
 
 </body>
 </html>
