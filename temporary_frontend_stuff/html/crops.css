@@ -1,124 +1,167 @@
-/* Apply a background image of a field to the entire page with transparency */
-body {
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('https://www.dreamstime.com/photos-images/vegetable-land.html'); /* Updated URL */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center;
-    background-attachment: fixed; /* Creates a parallax effect as the page scrolls */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Overlay to make the background image transparent */
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust the opacity here */
-    z-index: -1; /* Ensure the overlay is behind the content */
-}
-
-/* Container styling for the crop information */
-.crops-container {
-    width: 90%;
-    max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border: 2px solid #4caf50; /* Green border */
-}
-
-/* Header styling */
-header {
-    background-color: #4caf50; /* Green theme */
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #2c5530;
     color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Footer styles */
+footer {
+  background-color: #2c5530;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section {
+  padding: 1rem;
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+}
+
+  /* logo styles */ 
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-}
+    font-weight: bold;
+    color: #2c5530;
+  }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+   /* Navigation styles */
+   nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-}
-
-/* Form styling */
-form {
-    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
-    padding: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #a8e6cf;
+  }
+  
+  
+  .crop-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-label {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crop-form label {
     display: block;
-    margin-bottom: 5px;
-    color: #4caf50; /* Green theme */
-    font-weight: bold;
-}
-
-input[type="text"], input[type="date"] {
+    margin-bottom: 0.5rem;
+    color: #2c5530;
+    font-weight: 500;
+  }
+  
+  .crop-form input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-button {
-    background-color: #4caf50; /* Green theme */
+    font-size: 1rem;
+  }
+  
+  .crop-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2c5530;
     color: white;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #388e3c; /* Slightly darker green */
-}
-
-/* Responsive design: Adjust container width on smaller screens */
-@media (max-width: 480px) {
-    .crops-container {
-        width: 95%;
-        padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .crop-form button:hover {
+    background-color: #1f3d23;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .crop-form {
+      padding: 1rem;
     }
-
-    header h1 {
-        font-size: 20px;
-    }
-
-    form {
-        padding: 15px;
-    }
-
-    label, input[type="text"], input[type="date"], button {
-        font-size: 14px;
-    }
-}
+  }
