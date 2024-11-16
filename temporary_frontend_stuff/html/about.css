@@ -84,6 +84,107 @@
     color: #2c5530;
     margin: 1.5rem 0 1rem 0;
   }
+
+  
+  .founders-container {
+    display: flex;
+    flex-direction: row;    /* Changed to row */
+    flex-wrap: wrap;        /* Allows wrapping to next line if needed */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 2rem;              /* Space between cards */
+    margin: 2rem auto;
+    max-width: 1200px;      /* Increased max-width to accommodate multiple cards */
+    padding: 0 1rem;        /* Added padding for smaller screens */
+}
+
+.founder-card {
+    flex: 0 1 300px;        /* Flex-basis of 300px, allows shrinking but not growing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0;              /* Reset margin */
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-image {
+    margin-bottom: 1rem;
+}
+
+.founder-image img {
+    width: 150px;          /* Slightly smaller for row layout */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c5530;
+}
+
+.founder-info {
+    width: 100%;
+}
+
+.founder-info h3 {
+    color: #2c5530;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.id-number {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    color: #2c5530;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .founders-container {
+        gap: 1.5rem;
+    }
+
+    .founder-card {
+        flex: 0 1 250px;    /* Smaller cards on medium screens */
+    }
+
+    .founder-image img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .founders-container {
+        flex-direction: column; /* Stack cards vertically on mobile */
+        align-items: center;
+    }
+
+    .founder-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .founder-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .founder-info h3 {
+        font-size: 1.1rem;
+    }
+}
   
   /* Footer styles */
   footer {
@@ -158,68 +259,5 @@
     }
   }
 
-  .founders-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-  
-  .founder-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .founder-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .founder-info {
-    flex: 1;
-  }
-  
-  .founder-info h3 {
-    color: #2c5530;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .id-number {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .role {
-    color: #2c5530;
-    font-weight: 500;
-  }
-  
-  .founder-image {
-    margin-left: 2rem;
-  }
-  
-  .founder-image img {
-    width: 60px;    /* Reduced from 120px to 60px */
-    height: 60px;   /* Reduced from 120px to 60px */
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #2c5530; /* Also made border thinner to match smaller size */
-  }
-  
-  /* Mobile size can be even smaller if needed */
-  @media (max-width: 768px) {
-    .founder-image img {
-      width: 50px;    /* Reduced from 100px to 50px */
-      height: 50px;   /* Reduced from 100px to 50px */
-    }
-  }
-  
-  }
+}
   
