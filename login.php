@@ -13,7 +13,7 @@
 
     <div class="container" id="login">
         <h1 class="form-title">Log In</h1>
-        <form method="post" action ="">
+        <form method="post" action ="utils/verifylogin.php">
 
             <div class="input-group">
                 <i class="fas fa-phone"></i>

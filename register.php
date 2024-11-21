@@ -13,7 +13,7 @@
     
     <div class="container" id="register">
         <h1 class="form-title">Register</h1>
-        <form method="post" action ="">
+        <form method="post" action ="utils/verifyregister.php">
 
             <div class="input-group">
                 <i class="fas fa-user"></i>
@@ -44,7 +44,7 @@
                 <input type="password" name="password" placeholder="Password">
                 <label for="password">Password</label>
             </div>
-            <input type="submit" class="btn" name="login" value="Log In">
+            <input type="submit" class="btn" name="register" value="Register">
         </form>
         
         <div class="link-other-form">
