@@ -19,6 +19,7 @@
             <nav>
                 <li><a href="crops.php">Crop Management</a></li>
                 <li><a href="livestock.php">Livestock Management</a></li>
+                <li><a href= "marketplace.php">Marketplace</a></li>
                 <li><a href="about.php">About</a></li>
             </nav>
         </div>
