@@ -6,11 +6,19 @@
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(159, 239, 158);
     background: linear-gradient(to right, rgb(190, 190, 190), rgb(159, 239, 158));
 }
 
 .container {
+    position: absolute; 
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%); 
     background: #fff;
     width: 450px;
     padding:1.5rem;
@@ -20,7 +28,7 @@ body {
 }
 
 form {
-    margin:0 2rem;
+    margin:0 1rem;
 }
 
 .form-title{
