@@ -1,4 +1,4 @@
-<?php?> 
+<?php ?> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,9 +15,10 @@
           <h1>Agricultural Management System</h1>
         </div>
         <nav>
-          <li><a href="crops.html">Crop Management</a></li>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href= "about.html">About</a></li>
+          <li><a href="dashboard.php">Dashboard</a></li>
+          <li><a href="crops.php">Crop Management</a></li>
+          <li><a href= "marketplace.php">Marketplace</a></li>
+          <li><a href= "about.php">About</a></li>
         
         </nav>
       </div>

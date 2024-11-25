@@ -1,0 +1,227 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #2c5530;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ /* Logo styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-height: 60px;    /* Added to control container height */
+}
+
+.logo {
+  width: 60px;       
+  height: 60px;        
+  min-width: 40px;     /* Prevents logo from shrinking */
+  min-height: 40px;    /* Prevents logo from shrinking */
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #2c5530;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+  
+  /* Navigation styles */
+  nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #a8e6cf;
+  }
+
+  /* main */ 
+  /* Main content styles */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Search section styles */
+.search-section {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-box {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #2c5530;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-box:focus {
+    box-shadow: 0 0 5px rgba(44, 85, 48, 0.5);
+}
+
+/* Market prices section */
+.market-prices {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.price-header {
+    background-color: #2c5530;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.price-date {
+    font-size: 1.1rem;
+    color: #a8e6cf;
+    margin-top: 0.5rem;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-table th,
+.price-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.price-table th {
+    background-color: #f5f5f5;
+    color: #2c5530;
+    font-weight: bold;
+}
+
+.price-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.price-value {
+    font-weight: bold;
+    color: #2c5530;
+}
+
+    /* Footer styles */
+    footer {
+        background-color: #2c5530;
+        color: white;
+        padding: 2rem 1rem;
+        margin-top: 3rem;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .footer-section {
+        padding: 1rem;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .footer-section a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .header-container {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+
+        nav {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .dashboard-container {
+            padding: 1.5rem;
+        }
+
+        .sales-amount {
+            font-size: 1.5rem;
+        }
+    }
+
+  
