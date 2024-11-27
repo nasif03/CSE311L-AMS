@@ -1,0 +1,28 @@
+USE agricultural_management_system;
+
+INSERT INTO Farmer (user_name, phone_number, dateofbirth, address, password) VALUES 
+('john_smith', '(555) 123-4567', '1975-03-15', '1234 Farm Road, Springfield County', '$2y$10$randomHashedPassword1'),
+('emily_johnson', '(555) 234-5678', '1980-06-22', '5678 Rural Lane, Greenville County', '$2y$10$randomHashedPassword2'),
+('michael_williams', '(555) 345-6789', '1965-11-30', '9012 Harvest Street, Riverside County', '$2y$10$randomHashedPassword3'),
+('sarah_davis', '(555) 456-7890', '1972-08-17', '3456 Meadow Avenue, Hillsdale County', '$2y$10$randomHashedPassword4'),
+('robert_martinez', '(555) 567-8901', '1968-04-05', '7890 Country Road, Oakridge County', '$2y$10$randomHashedPassword5'),
+('jennifer_thompson', '(555) 678-9012', '1985-01-25', '2345 Agricultural Way, Centerville County', '$2y$10$randomHashedPassword6'),
+('david_rodriguez', '(555) 789-0123', '1960-07-12', '6789 Farm Circle, Meadowbrook County', '$2y$10$randomHashedPassword7'),
+('lisa_anderson', '(555) 890-1234', '1978-09-03', '0123 Green Valley Road, Rivertown County', '$2y$10$randomHashedPassword8'),
+('thomas_wilson', '(555) 901-2345', '1963-12-19', '4567 Wheat Field Lane, Sunset Valley County', '$2y$10$randomHashedPassword9'),
+('maria_garcia', '(555) 012-3456', '1982-05-07', '8901 Orchard Drive, Willowdale County', '$2y$10$randomHashedPassword10'),
+('james_brown', '(555) 123-4567', '1970-10-14', '2345 Rural Route, Springfield County', '$2y$10$randomHashedPassword11'),
+('karen_miller', '(555) 234-5678', '1988-03-28', '6789 Farmstead Way, Greenville County', '$2y$10$randomHashedPassword12'),
+('christopher_lee', '(555) 345-6789', '1955-06-11', '0123 Crop Circle Road, Riverside County', '$2y$10$randomHashedPassword13'),
+('patricia_white', '(555) 456-7890', '1976-02-20', '4567 Harvest Boulevard, Hillsdale County', '$2y$10$randomHashedPassword14'),
+('daniel_harris', '(555) 567-8901', '1967-09-16', '8901 Agricultural Path, Oakridge County', '$2y$10$randomHashedPassword15'),
+('nancy_clark', '(555) 678-9012', '1983-07-05', '2345 Farm Market Road, Centerville County', '$2y$10$randomHashedPassword16'),
+('kevin_moore', '(555) 789-0123', '1959-11-22', '6789 Country Haven Lane, Meadowbrook County', '$2y$10$randomHashedPassword17'),
+('elizabeth_taylor', '(555) 890-1234', '1974-04-30', '0123 Prairie View Drive, Rivertown County', '$2y$10$randomHashedPassword18'),
+('steven_martin', '(555) 901-2345', '1962-08-07', '4567 Cornfield Street, Sunset Valley County', '$2y$10$randomHashedPassword19'),
+('angela_rodriguez', '(555) 012-3456', '1986-01-12', '8901 Ranch Road, Willowdale County', '$2y$10$randomHashedPassword20'),
+('richard_thompson', '(555) 123-4567', '1971-05-18', '2345 Silo Lane, Springfield County', '$2y$10$randomHashedPassword21'),
+('susan_jackson', '(555) 234-5678', '1980-12-03', '6789 Farmhouse Way, Greenville County', '$2y$10$randomHashedPassword22'),
+('edward_martinez', '(555) 345-6789', '1966-07-25', '0123 Crop Lane, Riverside County', '$2y$10$randomHashedPassword23'),
+('laura_anderson', '(555) 456-7890', '1977-03-09', '4567 Rural Drive, Hillsdale County', '$2y$10$randomHashedPassword24'),
+('george_wilson', '(555) 567-8901', '1964-10-01', '8901 Farmstead Road, Oakridge County', '$2y$10$randomHashedPassword25');
