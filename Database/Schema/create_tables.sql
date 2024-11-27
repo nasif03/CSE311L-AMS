@@ -28,7 +28,7 @@ CREATE TABLE Crops (
 
 -- Animal Table 
 
-DROP TABLE IF EXISTS Animla 
+DROP TABLE IF EXISTS Animal 
 
 CREATE TABLE Animal (
     animal_id INT AUTO_INCREMENT PRIMARY KEY,
