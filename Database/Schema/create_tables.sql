@@ -26,3 +26,16 @@ CREATE TABLE Crops (
     soil_type VARCHAR(50) NOT NULL
 ); 
 
+-- Animal Table 
+
+DROP TABLE IF EXISTS Animla 
+
+CREATE TABLE Animal (
+    animal_id INT AUTO_INCREMENT PRIMARY KEY,
+    animal_type VARCHAR(50) NOT NULL,
+    feed_schedule VARCHAR(100) NOT NULL,
+    health_record TEXT NOT NULL
+); 
+
+
+
