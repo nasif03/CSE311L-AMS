@@ -1,4 +1,10 @@
-<?php ?>
+<?php
+session_start();
+$error_message = isset($_SESSION['error_message']) ? $_SESSION['error_message'] : '';
+$success_message = isset($_SESSION['success_message']) ? $_SESSION['success_message'] : '';
+unset($_SESSION['error_message']);
+unset($_SESSION['success_message']);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,35 +19,43 @@
     
     <div class="container" id="register">
         <h1 class="form-title">Register</h1>
+
+        <?php if (!empty($error_message)): ?>
+            <p style="color: red;"><?php echo htmlspecialchars($error_message); ?></p>
+        <?php endif; ?>
+        <?php if (!empty($success_message)): ?>
+            <p style="color: green;"><?php echo htmlspecialchars($success_message); ?></p>
+        <?php endif; ?>
+
         <form method="post" action ="utils/verifyregister.php">
 
             <div class="input-group">
                 <i class="fas fa-user"></i>
-                <input type="text" name="username" placeholder="User Name">
+                <input type="text" name="username" placeholder="User Name" required>
                 <label for="username">User Name</label>
             </div>
 
             <div class="input-group">
                 <i class="fas fa-phone"></i>
-                <input type="text" name="phone-number" placeholder="Phone Number">
+                <input type="tel" name="phone-number" pattern="[0-9]*" placeholder="01XXXXXXXXX" required>
                 <label for="phone-number">Phone Number</label>
             </div>
 
             <div class="input-group">
                 <i class="fas fa-calendar"></i>
-                <input type="text" name="dob" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date of Birth">
+                <input type="text" name="dob" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date of Birth" required>
                 <label for="dob">Date Of Birth</label>
             </div>
 
             <div class="input-group">
                 <i class="fas fa-house"></i>
-                <input type="text" name="address" placeholder="Address">
+                <input type="text" name="address" placeholder="Address" required>
                 <label for="address">Address</label>
             </div>
 
             <div class="input-group">
                 <i class="fas fa-user"></i>
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password" required>
                 <label for="password">Password</label>
             </div>
             <input type="submit" class="btn" name="register" value="Register">

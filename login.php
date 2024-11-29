@@ -1,4 +1,8 @@
-<?php ?>
+<?php 
+session_start();
+$error_message = isset($_SESSION['error_message']) ? $_SESSION['error_message'] : '';
+unset($_SESSION['error_message']);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,17 +17,22 @@
 
     <div class="container" id="login">
         <h1 class="form-title">Log In</h1>
+
+        <?php if (!empty($error_message)): ?>
+            <p style="color: red;"><?php echo htmlspecialchars($error_message); ?></p>
+        <?php endif; ?>
+
         <form method="post" action ="utils/verifylogin.php">
 
             <div class="input-group">
                 <i class="fas fa-phone"></i>
-                <input type="text" name="phone-number" placeholder="Phone Number">
+                <input type="text" name="phone-number" pattern="[0-9]*" placeholder="Phone Number" required>
                 <label for="phone-number">Phone Number</label>
             </div>
 
             <div class="input-group">
                 <i class="fas fa-user"></i>
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password" required>
                 <label for="password">Password</label>
             </div>
         <input type="submit" class="btn" name="login" value="Log In">
