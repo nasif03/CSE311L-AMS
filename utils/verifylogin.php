@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
 
     if (password_verify($password, $row['Password'])) {
-        header("Location: ../index.php"); // login success
+        header("Location: ../dashboard.php"); // login success
         exit;
     } else {
         $_SESSION['error_message'] = "The password is incorrect.";
