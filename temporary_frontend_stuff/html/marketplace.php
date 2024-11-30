@@ -19,6 +19,7 @@
                 <li><a href="dashboard.php">Dashboard</a></li>
                 <li><a href="crops.php">Crop Management</a></li>
                 <li><a href="livestock.php">Livestock Management</a></li>
+                <li><a href="vet.php">Veterianry Information</li>
                 <li><a href="about.php">About</a></li>
             </nav>
         </div>
