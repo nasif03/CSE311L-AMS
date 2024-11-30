@@ -9,7 +9,7 @@
 <header>
     <div class="header-container">
     <div class="logo-container">
-        <div class="logo"><img src="images/logo.jpeg" alt="AMS Logo" class="logo"></div>
+        <div class="logo"><img src="../temporary_frontend_stuff/html/images/logo.jpeg" alt="AMS Logo" class="logo"></div>
         <h1>Agricultural Management System</h1>
     </div>
     <nav>

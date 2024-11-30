@@ -31,6 +31,16 @@ validate_input(strlen($password) < 8, "Password must be atleast 8 characters.");
 validate_input(strlen($phone_no) != 11, "Phone number must be 11 characters.");
 
 
+$query = "SELECT * FROM farmer WHERE phone_no = '$phone_no'";
+$result = $conn->execute_query($query);
+
+if ($result-> num_rows > 0) {
+    $_SESSION['error_message'] = "This phone number is already in use.";
+    $conn->close();
+    header("Location: ../register.php");
+    exit;
+}
+
 // create the account
 $password = password_hash($password, PASSWORD_DEFAULT);
 
