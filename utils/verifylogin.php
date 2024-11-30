@@ -21,6 +21,7 @@ if ($result->num_rows > 0) {
 
     if (password_verify($password, $row['Password'])) {
         header("Location: ../dashboard.php"); // login success
+        $_SESSION['farmer_id'] = $row['farmer_id'];
         exit;
     } else {
         $_SESSION['error_message'] = "The password is incorrect.";
