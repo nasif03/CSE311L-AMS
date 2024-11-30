@@ -14,8 +14,9 @@
     </div>
     <nav>
         <li><a href="dashboard.php">Home</a></li>
-        <li><a href="crops.php">Crop Management</a></li>
-        <li><a href="livestock.php">Livestock Management</a></li>
+        <li><a href="crops.php">Manage Crops</a></li>
+        <li><a href="livestock.php">Manage Livestock</a></li>
+        <li><a href="vet.php">Vet Help</a></li>
         <li><a href="about.php">About</a></li>
     </nav>
     </div>
