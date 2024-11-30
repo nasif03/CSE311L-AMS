@@ -18,63 +18,84 @@
           <li><a href="dashboard.php">Dashboard</a></li>
           <li><a href="crops.php">Crop Management</a></li>
           <li><a href="livestock.php">Livestock Management</a></li>
-          <li><a href="vet.php">Veterianry Information</li>
           <li><a href= "marketplace.php">Marketplace</a></li>
+          <li><a href= "about.php">About</a></li>
         </nav>
       </div>
     </header>
 
     <main>
       <section>
-        <h2>Welcome to AMS</h2>
-        <p>Your all-in-one platform to manage crops and livestock efficiently.</p>
+        <h2>Information of out Vets</h2>
+        <p>Find the appropriate doctor according to your animals' need</p>
         
-        <h2>Founders</h2>
+        <h2>Vets</h2>
         <div class="founders-container">
           <div class="founder-card">
             <div class="founder-info">
               <div class="founder-image">
-                <img src="images/arafath.jpeg" alt="Md. Arafath Hossain Oyomoy">
+                <img src="images/stephenstrange.webp" alt="Stephen Strange">
               </div>
-              <h3>Md. Arafath Hossain Oyomoy</h3>
-              <p class="id-number">2122456642</p>
-              <p class="role">Co-Founder & CEO</p>
+              <h3>Dr. Stephen Stranger</h3>
+              <p class="id-number">(555)016456541654</p>
+              <p class="role">Dentistry</p>
+              <p class="time">Sat, Mon, Thu 9AM - 10AM</p>
             </div>
           </div>
 
           <div class="founder-card">
             <div class="founder-info">
               <div class="founder-image">
-                <img src="images/nasif.jpg" alt="Nasif Atique Chowdhury">
+                <img src="images/brucebanner.jpg" alt="Dr. Bruce Banner">
               </div>
-              <h3>Nasif Atique Chowdhury</h3>
-              <p class="id-number">2233362642</p>
-              <p class="role">Co-Founder & CTO</p>
+              <h3>Dr. Bruce Banner </h3>
+              <p class="id-number">(555)324165416</p>
+              <p class="role">Internal Medicine</p>
+              <p class="time">24/7 Available</p>
             </div>
           </div>
 
           <div class="founder-card">
             <div class="founder-info">
             <div class="founder-image">
-              <img src="images/shafin.jpg" alt="Shafin Rahman">
+              <img src="images/kentnelson.jpg" alt="Dr. Kent Nelson">
             </div>
-              <h3>Shafin Rahman</h3>
-              <p class="id-number">2233146642</p>
-              <p class="role">Co-Founder & COO</p>
+              <h3>Dr. Kent Nelson</h3>
+              <p class="id-number">(555)32145646156</p>
+              <p class="role">Nutrition</p>
+              <p class="time"> Fri, Sun, Wed 9AM - 10PM</p>
             </div>
           </div>
+
+          <div class="founder-card">
+            <div class="founder-info">
+            <div class="founder-image">
+              <img src="images/paul.jpg" alt="Dr. Paul Rudd">
+            </div>
+              <h3>Dr. Paul Rudd</h3>
+              <p class="id-number">(555)3554665465468</p>
+              <p class="role">Poultry</p>
+              <p class="time"> Fri, Sun, Wed 9AM - 10PM</p>
+            </div>
+         </div>
+
+         <div class="founder-card">
+            <div class="founder-info">
+            <div class="founder-image">
+              <img src="images/christina.jpg" alt="Dr. Christina July">
+            </div>
+              <h3>Dr. Christina July</h3>
+              <p class="id-number">(555)99789878</p>
+              <p class="role">Surgery</p>
+              <p class="time"> Fri, Mon, Thu 5PM - 9PM</p>
+            </div>
+         </div>
+
+
         </div>
 
-        <h2>Share Holder</h2>
-        <div class="founder-card">
-          <div class="founder-info">
-            <h3>Shuvodip Biswas</h3>
-            <p class="role">Principal Investor</p>
-          </div>
-          <div class="founder-image">
-            <img src="images/shuvodip.jpeg" alt="Shuvodip Biswas">
-          </div>
-        </div>
+     
+
       </section>
     </main>
 
