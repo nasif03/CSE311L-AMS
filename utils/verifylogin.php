@@ -1,7 +1,7 @@
 <?php 
+session_start();
 
 include ('connect_db.php');
-session_start();
 
 if (isset($_POST)) {
     $phone_no = $_POST['phone-number'];
@@ -20,8 +20,8 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
 
     if (password_verify($password, $row['Password'])) {
+        $_SESSION['farmer_id'] = $row['Farmer_ID'];
         header("Location: ../dashboard.php"); // login success
-        $_SESSION['farmer_id'] = $row['farmer_id'];
         exit;
     } else {
         $_SESSION['error_message'] = "The password is incorrect.";

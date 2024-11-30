@@ -1,7 +1,7 @@
 <?php
+session_start();
 
 include("connect_db.php");
-session_start();
 
 if (isset($_POST)) {
     $cropname = $_POST['cropName'];

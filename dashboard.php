@@ -1,4 +1,10 @@
 <?php 
+    session_start();
+    if (!isset($_SESSION['farmer_id'])) {
+        header("Location: login.php"); // Redirect to login if not logged in
+        exit;
+    }
+
     include("frontend/header.php");
     include("utils/connect_db.php");
 ?> 

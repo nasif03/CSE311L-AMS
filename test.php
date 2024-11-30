@@ -1,3 +1,4 @@
 <?php
-    echo "testing";
+    session_start();
+    echo $_SESSION['farmer_id'];
 ?>

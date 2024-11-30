@@ -1,6 +1,8 @@
 <?php
 
-$query = "SELECT CropName, SUM(YieldEstimate) as sum from crops GROUP BY CropName";
+$id = $_SESSION['farmer_id'];
+$query = "SELECT CropName, SUM(YieldEstimate) AS sum FROM crops 
+          WHERE farmer_id = '$id' GROUP BY CropName";
 $result = mysqli_query($conn, $query);
 
 $count = 0;
@@ -25,11 +27,11 @@ var chart = new CanvasJS.Chart("chartContainer", {
         text: "Expected Crop Yield"
     },
     axisY: {
-        title: "Crop Yield (in tonnes)"
+        title: "Crop Yield (in kgs)"
     },
     data: [{
         type: "column",
-        yValueFormatString: "#,##0.## tonnes",
+        yValueFormatString: "#,##0.## kgs",
         dataPoints: <?php echo json_encode($yield_per_month, JSON_NUMERIC_CHECK); ?>
     }]
 });
