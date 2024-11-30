@@ -1,0 +1,275 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #2c5530;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ /* Logo styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-height: 60px;    /* Added to control container height */
+}
+
+.logo {
+  width: 60px;       
+  height: 60px;        
+  min-width: 40px;     /* Prevents logo from shrinking */
+  min-height: 40px;    /* Prevents logo from shrinking */
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #2c5530;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+  
+  /* Navigation styles */
+  nav {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #a8e6cf;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    color: #2c5530;
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  
+  .founders-container {
+    display: flex;
+    flex-direction: row;    /* Changed to row */
+    flex-wrap: wrap;        /* Allows wrapping to next line if needed */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 2rem;              /* Space between cards */
+    margin: 2rem auto;
+    max-width: 1200px;      /* Increased max-width to accommodate multiple cards */
+    padding: 0 1rem;        /* Added padding for smaller screens */
+}
+
+.founder-card {
+    flex: 0 1 300px;        /* Flex-basis of 300px, allows shrinking but not growing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0;              /* Reset margin */
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+}
+
+.founder-image {
+    margin-bottom: 1rem;
+}
+
+.founder-image img {
+    width: 150px;          /* Slightly smaller for row layout */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c5530;
+}
+
+.founder-info {
+    width: 100%;
+}
+
+.founder-info h3 {
+    color: #2c5530;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.id-number {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    color: #2c5530;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .founders-container {
+        gap: 1.5rem;
+    }
+
+    .founder-card {
+        flex: 0 1 250px;    /* Smaller cards on medium screens */
+    }
+
+    .founder-image img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .founders-container {
+        flex-direction: column; /* Stack cards vertically on mobile */
+        align-items: center;
+    }
+
+    .founder-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .founder-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .founder-info h3 {
+        font-size: 1.1rem;
+    }
+}
+  
+  /* Footer styles */
+  footer {
+    background-color: #2c5530;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    padding: 1rem;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio */
+    border-radius: 50%; /* Optional: if you want the logo container to be circular */
+    background-color: #ffffff; /* Optional: background color behind the logo */
+    padding: 5px; /* Optional: adds some space around the logo */
+  }
+  
+  /* You might want to adjust the logo size for mobile devices */
+  @media (max-width: 768px) {
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+}
+  

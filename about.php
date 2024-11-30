@@ -59,7 +59,7 @@
             <p class="role">Principal Investor</p>
           </div>
           <div class="founder-image">
-            <img src="images/shuvodip.jpg" alt="Shuvodip Biswas">
+            <img src="images/shuvodip.jpeg" alt="Shuvodip Biswas">
           </div>
         </div>
       </section>
