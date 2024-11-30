@@ -40,6 +40,7 @@
               <p class="id-number">(555)016456541654</p>
               <p class="role">Dentistry</p>
               <p class="time">Sat, Mon, Thu 9AM - 10AM</p>
+              <button type="Submit">Take Appoinment</button>
             </div>
           </div>
 
@@ -52,6 +53,7 @@
               <p class="id-number">(555)324165416</p>
               <p class="role">Internal Medicine</p>
               <p class="time">24/7 Available</p>
+              <button type="Submit">Take Appoinment</button>
             </div>
           </div>
 
@@ -64,6 +66,7 @@
               <p class="id-number">(555)32145646156</p>
               <p class="role">Nutrition</p>
               <p class="time"> Fri, Sun, Wed 9AM - 10PM</p>
+              <button type="Submit">Take Appoinment</button>
             </div>
           </div>
 
@@ -76,6 +79,7 @@
               <p class="id-number">(555)3554665465468</p>
               <p class="role">Poultry</p>
               <p class="time"> Fri, Sun, Wed 9AM - 10PM</p>
+              <button type="Submit">Take Appoinment</button>
             </div>
          </div>
 
@@ -88,6 +92,7 @@
               <p class="id-number">(555)99789878</p>
               <p class="role">Surgery</p>
               <p class="time"> Fri, Mon, Thu 5PM - 9PM</p>
+              <button type="Submit">Take Appoinment</button>
             </div>
          </div>
 
@@ -114,7 +119,7 @@
           <p><a href="#">Support</a></p>
         </div>
         <div class="footer-section">
-          <h3>Follow Us</h3>
+          <h3>Follow Us</h3> 
           <p><a href="#">Facebook</a></p>
           <p><a href="#">Twitter</a></p>
           <p><a href="#">LinkedIn</a></p>
