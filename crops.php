@@ -16,6 +16,7 @@
       
       <main>
         <form method="post" action="utils/addcrop.php" class="crop-form">
+          <h3>Add Crops</h3>
           <label for="cropName">Crop Name:</label>
           <input type="text" name="cropName" required />
           
@@ -41,6 +42,9 @@
 
           <input type="submit" class="btn" name="addcrop" value="Add">
         </form>
+
+        
+
       </main>
     </div>
 

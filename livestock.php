@@ -11,20 +11,30 @@
   </head>
   <body>
 
-    <main>
-      <form>
-        <label for="animalType">Animal Type:</label>
-        <input type="text" id="animalType" name="animalType" required />
+  <main>
+        <form method="post" action="utils/addlivestock.php" class="livestock-form">
+          <h3> Add Livestock </h3>
+          <label for="animal">Animal type:</label>
+          <input type="text" name="animal" required />
+          
+          <label for="age">Age:</label>
+          <input type="number" name="age" required />
+          
+          <label for="gender">Gender:</label>
+          <input type="text" name="gender" required />
 
-        <label for="feedSchedule">Feed Schedule:</label>
-        <input type="text" id="feedSchedule" name="feedSchedule" required />
+          <label for="weight">Weight:</label>
+          <input type="number" name="weight" required />
 
-        <label for="healthRecord">Health Record:</label>
-        <textarea id="healthRecord" name="healthRecord" required></textarea>
+          <label for="health">Health status:</label>
+          <input type="text" name="health" required />
 
-        <button type="submit">Save Livestock Data</button>
-      </form>
-    </main>
+          <label for="produces">Produces:</label>
+          <input type="text" name="produces" required />
+
+          <input type="submit" class="btn" name="addlivestock" value="Add">
+        </form>
+      </main>
 
   </body>
 </html>

@@ -20,6 +20,7 @@
 <body>
     <main>
         <div>
+            <?php include("frontend/chart_animals.php"); ?>
             <?php include("frontend/chart_yield.php"); ?>
         </div>
     </main>
