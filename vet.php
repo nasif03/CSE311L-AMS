@@ -19,7 +19,7 @@
           <div class="founder-card">
             <div class="founder-info">
               <div class="founder-image">
-                <img src="images/stephenstrange.webp" alt="Stephen Strange">
+                <img src="frontend/images/stephenstrange.webp" alt="Stephen Strange">
               </div>
               <h3>Dr. Stephen Stranger</h3>
               <p class="id-number">(555)016456541654</p>
@@ -32,7 +32,7 @@
           <div class="founder-card">
             <div class="founder-info">
               <div class="founder-image">
-                <img src="images/brucebanner.jpg" alt="Dr. Bruce Banner">
+                <img src="frontend/images/brucebanner.jpg" alt="Dr. Bruce Banner">
               </div>
               <h3>Dr. Bruce Banner </h3>
               <p class="id-number">(555)324165416</p>
@@ -45,7 +45,7 @@
           <div class="founder-card">
             <div class="founder-info">
             <div class="founder-image">
-              <img src="images/kentnelson.jpg" alt="Dr. Kent Nelson">
+              <img src="frontend/images/kentnelson.jpg" alt="Dr. Kent Nelson">
             </div>
               <h3>Dr. Kent Nelson</h3>
               <p class="id-number">(555)32145646156</p>
@@ -58,7 +58,7 @@
           <div class="founder-card">
             <div class="founder-info">
             <div class="founder-image">
-              <img src="images/paul.jpg" alt="Dr. Paul Rudd">
+              <img src="frontend/images/paul.jpg" alt="Dr. Paul Rudd">
             </div>
               <h3>Dr. Paul Rudd</h3>
               <p class="id-number">(555)3554665465468</p>
@@ -71,7 +71,7 @@
          <div class="founder-card">
             <div class="founder-info">
             <div class="founder-image">
-              <img src="images/christina.jpg" alt="Dr. Christina July">
+              <img src="frontend/images/christina.jpg" alt="Dr. Christina July">
             </div>
               <h3>Dr. Christina July</h3>
               <p class="id-number">(555)99789878</p>
