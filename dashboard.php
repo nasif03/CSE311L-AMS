@@ -18,12 +18,27 @@
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-    <main>
-        <div>
-            <?php include("frontend/chart_animals.php"); ?>
-            <?php include("frontend/chart_yield.php"); ?>
-        </div>
-    </main>
+    <div style="margin:50px auto;">
+        <p>Expected Yield in future: 
+        <?php 
+            $id = $_SESSION['farmer_id'];
+            $d = date("Y-m-d");
+            $query = "SELECT SUM(YieldEstimate) FROM crops 
+                        WHERE harvestdate > $d AND farmer_id = $id";
+            $result = $conn->execute_query($query);
+            while ($row = $result->fetch_assoc()) {
+                echo $row['SUM(YieldEstimate)'];
+            }
+            echo "kgs";
+        ?>
+        </p>
+
+    </div>
+
+    <div>
+        <?php include("frontend/chart_yield.php"); ?>
+    </div>
+    
 </body>
 </html>
 
