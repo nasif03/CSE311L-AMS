@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+}
+  
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th, td {
+    padding: 8px;
+}
+
+thead th {
+    width: 25%;
+}
+

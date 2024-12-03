@@ -1,4 +1,5 @@
 footer {
+    clear:both;
     background: linear-gradient(to bottom, rgb(51, 117, 61), rgb(80, 182, 95));
     color: white;
     padding: 2rem 1rem;

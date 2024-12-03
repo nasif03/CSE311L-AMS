@@ -12,11 +12,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Livestock Management</title>
-    <link rel="stylesheet" href="css/livestock.css" />
+    <link rel="stylesheet" href="css/manage.css" />
   </head>
   <body>
 
-  <main>
+    <div class="parent">
+
+      
+      <div class="container">
         <form method="post" action="utils/addlivestock.php" class="livestock-form">
           <h3> Add Livestock </h3>
           <label for="animal">Animal type:</label>
@@ -27,27 +30,31 @@
           
           <label for="gender">Gender:</label>
           <input type="text" name="gender" required />
-
+          
           <label for="weight">Weight:</label>
           <input type="number" name="weight" required />
-
+          
           <label for="health">Health status:</label>
           <input type="text" name="health" required />
-
+          
           <label for="produces">Produces:</label>
           <input type="text" name="produces" required />
-
+          
           <input type="submit" class="btn" name="addlivestock" value="Add">
         </form>
-
+      </div>
+      
+      <div>
         <?php
-          include("frontend/chart_animals.php");
+          include("utils/viewlivestock.php");
         ?>
-      </main>
-
-  </body>
-</html>
-
-<?php
+      </div>
+      
+    </div>
+      
+    </body>
+    </html>
+    
+    <?php
   include("frontend/footer.php");
 ?>
