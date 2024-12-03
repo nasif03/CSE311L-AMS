@@ -17,7 +17,7 @@
   <body>
 
     <div class="parent">
-
+      
       
       <div class="container">
         <form method="post" action="utils/addlivestock.php" class="livestock-form">
