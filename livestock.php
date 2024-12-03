@@ -44,7 +44,7 @@
         </form>
       </div>
       
-      <div>
+      <div class="container">
         <?php
           include("utils/viewlivestock.php");
         ?>
