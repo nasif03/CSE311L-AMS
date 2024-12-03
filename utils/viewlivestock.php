@@ -30,13 +30,13 @@
                     <td><?php echo $type; ?></td>
                     <td><?php echo $gender; ?></td>
                     <td><?php echo $weight; ?></td>
-                    <td><a href="updatelivestock.php?id=<?php echo $Id; ?>" class="btn btn-primary">Edit</a></td>
-                    <td><a href="deletelivestock.php?id=<?php echo $Id; ?>" class="btn btn-danger">Delete</a></td>
+                    <td><a href="utils/updatelivestock.php?lid=<?php echo $lid; ?>" class="btn">Edit</a></td>
+                    <td><a href="utils/deletelivestock.php?lid=<?php echo $lid; ?>" class="btn">Delete</a></td>
                 </tr>
 
                 <?php
                         } 
-                    } 
+                    }
                 ?>
             </tbody>
             </table>
