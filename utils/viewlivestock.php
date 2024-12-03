@@ -34,7 +34,7 @@
                     <td><?php echo $gender; ?></td>
                     <td><?php echo $weight; ?></td>
                     <td><a href="updatelivestock.php?lid=<?php echo $lid; ?>" class="btn">Edit</a></td>
-                    <td><a href="deletelivestock.php?lid=<?php echo $lid; ?>" class="btn">Delete</a></td>
+                    <td><a href="utils/deletelivestock.php?lid=<?php echo $lid; ?>" class="btn">Delete</a></td>
                 </tr>
 
                 <?php

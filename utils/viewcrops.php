@@ -34,7 +34,7 @@
                     <td><?php echo $pdate; ?></td>
                     <td><?php echo $hdate; ?></td>
                     <td><a href="updatecrops.php?cid=<?php echo $cid; ?>" class="btn">Edit</a></td>
-                    <td><a href="deletecrops.php?cid=<?php echo $cid; ?>" class="btn">Delete</a></td>
+                    <td><a href="utils/deletecrops.php?cid=<?php echo $cid; ?>" class="btn">Delete</a></td>
                 </tr>
 
                 <?php
