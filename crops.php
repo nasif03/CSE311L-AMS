@@ -18,7 +18,7 @@
     
     <div class="parent">
 
-    <div class="crops-container">
+    <div class="container">
       <form method="post" action="utils/addcrop.php" class="crop-form">
         <h3>Add Crops</h3>
         <label for="cropName">Crop Name:</label>
@@ -48,35 +48,11 @@
       </form>    
     </div>
 
-    <div class="crops-container">
-      <form>
-      <h3>Add Crops</h3>
-        <label for="cropName">Crop Name:</label>
-        <input type="text" name="cropName" required />
-        
-        <label for="seedAmount">Seed Amount:</label>
-        <input type="number" name="seedAmount" required />
-        
-        <label for="plantingDate">Planting Date:</label>
-        <input type="date" name="plantingDate" required />
-
-        <label for="harvestDate">Expected Harvest Date:</label>
-        <input type="date" name="harvestDate" required />
-
-        <label for="yieldEstimate">Expected Yield:</label>
-        <input type="number" name="expectedYield" required />
-        
-        <label for="weather">Weather:</label>
-        <select id="weather" name="weather" style="width:200px;">
-          <option value="Any">Any</option>
-          <option value="Winter">Winter</option>
-          <option value="Summer">Summer</option>
-          <option value="Monsoon">Monsoon</option>
-        </select>
-
-        <input type="submit" class="btn" name="addcrop" value="Add">
-      </form>
-    </div>
+    <div class="container">
+        <?php
+          include("utils/viewcrops.php");
+        ?>
+      </div>
         
     </div>
 
