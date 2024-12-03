@@ -8,13 +8,12 @@ if (isset($_POST)) {
     $gender = $_POST['gender'];
     $weight = $_POST['weight'];
     $age = $_POST['age'];
-    $produces = $_POST['produces'];
     $health = $_POST['health'];
 }
 
 $id = $_SESSION['farmer_id'];
-$query = "INSERT INTO livestock(farmer_id, animaltype, health, age, weight, produces, gender)
-          VALUES ('$id', '$animaltype', '$health', '$age', '$weight', '$produces', '$gender')";
+$query = "INSERT INTO livestock(farmer_id, animaltype, health, age, weight, gender)
+          VALUES ('$id', '$animaltype', '$health', '$age', '$weight', '$gender')";
 
 $result = $conn->execute_query($query);
 header("Location: ../livestock.php");

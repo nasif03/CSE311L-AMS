@@ -37,9 +37,6 @@
           <label for="health">Health status:</label>
           <input type="text" name="health" required />
           
-          <label for="produces">Produces:</label>
-          <input type="text" name="produces" required />
-          
           <input type="submit" class="btn" name="addlivestock" value="Add">
         </form>
       </div>

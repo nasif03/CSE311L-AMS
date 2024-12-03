@@ -6,6 +6,7 @@
                 <tr>
                 <th scope="col">Livestock_ID</th>
                 <th scope="col">Animal Type</th>
+                <th scope="col">Age</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Weight</th>
                 <th scope="col">Edit</th>
@@ -21,6 +22,7 @@
                         while ($row = $result -> fetch_assoc()) { 
                             $lid = $row['Livestock_ID'];
                             $type = $row['AnimalType'];
+                            $age = $row['Age'];
                             $gender = $row['Gender'];
                             $weight = $row['Weight'];   
                 ?>
@@ -28,6 +30,7 @@
                 <tr class="trow">
                     <td><?php echo $lid; ?></td>
                     <td><?php echo $type; ?></td>
+                    <td><?php echo $age; ?></td>
                     <td><?php echo $gender; ?></td>
                     <td><?php echo $weight; ?></td>
                     <td><a href="utils/updatelivestock.php?lid=<?php echo $lid; ?>" class="btn">Edit</a></td>
